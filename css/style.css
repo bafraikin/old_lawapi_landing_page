@@ -64,6 +64,14 @@ button:focus {
   padding-left: 0px;
   padding-right: 0px; }
 
+.bubble {
+  background-color: green;
+  display: block;
+  padding: 5px;
+  margin-bottom: 15vh;
+  border-radius: 5%;
+}
+
 .white_bg {
   background: #fff !important; }
 
