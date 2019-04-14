@@ -9,20 +9,15 @@ var y2;
 let lines = new Array;
 
 
-
 function createLineElement(x, y, length, angle) {
   var line = document.createElement("div");
-  var styles = 'border: 1px solid black; '
-    + 'width: ' + length + 'px; '
-    + 'height: 0px; '
-    + 'z-index: 0;'
+  var styles = 'width: ' + (length + 50) + 'px; '
     + '-moz-transform: rotate(' + angle + 'rad); '
     + '-webkit-transform: rotate(' + angle + 'rad); '
     + '-o-transform: rotate(' + angle + 'rad); '  
     + '-ms-transform: rotate(' + angle + 'rad); '  
-    + 'position: absolute; '
-    + 'top: ' + y + 'px; '
-    + 'left: ' + x + 'px; ';
+    + 'top: ' + (y - 10) + 'px;'
+    + 'left: ' + (x - 25) + 'px;';
   line.setAttribute('style', styles);  
   return line;
 }
@@ -61,17 +56,13 @@ function updateLine(x1, y1, x2, y2, div) {
 
 function updateLineElement(x, y, length, angle, div) {
   var line = div;
-  var styles = 'border: 1px double black; '
-    + 'width: ' + length + 'px; '
-    + 'height: 0px; '
-    + 'z-index: 0;'
+  var styles = 'width: ' + (length + 50) + 'px; '
     + '-moz-transform: rotate(' + angle + 'rad); '
     + '-webkit-transform: rotate(' + angle + 'rad); '
     + '-o-transform: rotate(' + angle + 'rad); '  
     + '-ms-transform: rotate(' + angle + 'rad); '  
-    + 'position: absolute; '
-    + 'top: ' + y + 'px;'
-    + 'left: ' + x + 'px;';
+    + 'top: ' + (y - 10) + 'px;'
+    + 'left: ' + (x - 25) + 'px;';
   line.setAttribute('style', styles);  
   return line;
 }
@@ -83,7 +74,9 @@ for (let i = 1; i < 3; i++) {
   x2 = divs[i - 1].offset().left + (divs[i - 1].width()/2);
   y2 = divs[i - 1].offset().top + (divs[i - 1].height());
   lines.push(createLine(x1, y1, x2, y2));
-document.body.appendChild($(lines[i - 1])[0]);
+    $(lines[i - 1]).addClass("link");
+  document.body.appendChild($(lines[i - 1])[0]);
+
 }
 
 let update1 = () => {
