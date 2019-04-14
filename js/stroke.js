@@ -64,14 +64,14 @@ function updateLineElement(x, y, length, angle, div) {
   var styles = 'border: 1px solid black; '
     + 'width: ' + length + 'px; '
     + 'height: 0px; '
-    + 'z-index: -5'
     + '-moz-transform: rotate(' + angle + 'rad); '
     + '-webkit-transform: rotate(' + angle + 'rad); '
     + '-o-transform: rotate(' + angle + 'rad); '  
     + '-ms-transform: rotate(' + angle + 'rad); '  
     + 'position: absolute; '
     + 'top: ' + y + 'px; '
-    + 'left: ' + x + 'px; ';
+    + 'left: ' + x + 'px; '
+    + "z-index: 0;";
   line.setAttribute('style', styles);  
   return line;
 }
