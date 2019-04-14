@@ -16,7 +16,7 @@ function createLineElement(x, y, length, angle) {
     + '-webkit-transform: rotate(' + angle + 'rad); '
     + '-o-transform: rotate(' + angle + 'rad); '  
     + '-ms-transform: rotate(' + angle + 'rad); '  
-    + 'top: ' + (y - 10) + 'px;'
+    + 'top: ' + (y) + 'px;'
     + 'left: ' + (x - 25) + 'px;';
   line.setAttribute('style', styles);  
   return line;
@@ -61,7 +61,7 @@ function updateLineElement(x, y, length, angle, div) {
     + '-webkit-transform: rotate(' + angle + 'rad); '
     + '-o-transform: rotate(' + angle + 'rad); '  
     + '-ms-transform: rotate(' + angle + 'rad); '  
-    + 'top: ' + (y - 10) + 'px;'
+    + 'top: ' + (y) + 'px;'
     + 'left: ' + (x - 25) + 'px;';
   line.setAttribute('style', styles);  
   return line;
