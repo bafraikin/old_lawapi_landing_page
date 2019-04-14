@@ -15,7 +15,7 @@ function createLineElement(x, y, length, angle) {
   var styles = 'border: 1px solid black; '
     + 'width: ' + length + 'px; '
     + 'height: 0px; '
-    + 'z-index: -5'
+    + 'z-index: 0;'
     + '-moz-transform: rotate(' + angle + 'rad); '
     + '-webkit-transform: rotate(' + angle + 'rad); '
     + '-o-transform: rotate(' + angle + 'rad); '  
@@ -61,17 +61,17 @@ function updateLine(x1, y1, x2, y2, div) {
 
 function updateLineElement(x, y, length, angle, div) {
   var line = div;
-  var styles = 'border: 1px solid black; '
+  var styles = 'border: 1px double black; '
     + 'width: ' + length + 'px; '
     + 'height: 0px; '
+    + 'z-index: 0;'
     + '-moz-transform: rotate(' + angle + 'rad); '
     + '-webkit-transform: rotate(' + angle + 'rad); '
     + '-o-transform: rotate(' + angle + 'rad); '  
     + '-ms-transform: rotate(' + angle + 'rad); '  
     + 'position: absolute; '
-    + 'top: ' + y + 'px; '
-    + 'left: ' + x + 'px; '
-    + "z-index: 0;";
+    + 'top: ' + y + 'px;'
+    + 'left: ' + x + 'px;';
   line.setAttribute('style', styles);  
   return line;
 }

@@ -68,6 +68,7 @@ padding-right: 0px; }
 div.bubble {
   margin-bottom: 10vh;
   height: 8vh;
+  z-index: 3;
 }
 
 div.bubble span {
