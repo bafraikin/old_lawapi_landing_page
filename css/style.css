@@ -524,7 +524,7 @@ background-clip: content-box, border-box; }
 /* Home Banner Area css
 ============================================================================================ */
 .home_banner_area {
-  z-index: 1;
+  z-index: -1;
   background: url(../img/banner/home-banner.png) no-repeat right center;
 background-size: cover; }
 .home_banner_area .banner_inner {
