@@ -108,11 +108,17 @@ div.bubble p {
   .logo_h {
     width: 12%;
   }
+  #logo_mobile {
+    display: none
+  }
 }
 
 @media (max-width: 991px) {
   .logo_h {
     width: 12vw;
+  }
+  #logo_navigator{
+    display: none
   }
 }
 
