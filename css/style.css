@@ -90,7 +90,7 @@ div.bubble p {
   z-index: 3;
 }
 
-.link {
+div.link {
   height: 2px;
   z-index: 0;
   position: absolute;
@@ -409,7 +409,9 @@ background: #fff; }
 .header_area .navbar-brand {
 margin-right: 30px; }
 .header_area .menu_nav {
-width: 100%; }
+width: 100%; 
+justify-content: end!important;
+}
 .header_area .navbar {
   background: transparent;
   padding: 0px;
