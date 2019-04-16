@@ -1877,6 +1877,9 @@ pre code {
     .table-responsive-lg>.table-bordered {
         border: 0
     }
+	.link {
+		display: none
+	}
 }
 
 @media (max-width:1199.98px) {
